@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RotaUni - Guia para o Ensino Superior</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="container conteudo-header">
+            <button class="logo" data-navegar="inicio">RotaUni</button>
+            
+            <nav class="menu-desktop">
+                <button class="btn-menu ativo" data-navegar="inicio">Início</button>
+                <button class="btn-menu" data-navegar="sobre">Sobre</button>
+                <button class="btn-menu" data-navegar="programas">Programas</button>
+                <button class="btn-menu" data-navegar="calculadora">Calculadora</button>
+                <button class="btn-menu" data-navegar="cursinhos">Cursinhos</button>
+            </nav>
+
+            <button class="btn-mobile" aria-label="Abrir menu">
+                <span class="icone-menu">☰</span>
+            </button>
+        </div>
+
+        <nav class="menu-mobile" id="menuMobile">
+            <button class="btn-menu ativo" data-navegar="inicio">Início</button>
+            <button class="btn-menu" data-navegar="sobre">Sobre</button>
+            <button class="btn-menu" data-navegar="programas">Programas</button>
+            <button class="btn-menu" data-navegar="calculadora">Calculadora</button>
+            <button class="btn-menu" data-navegar="cursinhos">Cursinhos</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="pagina ativa">
+            <div class="banner-inicial">
+                <div class="container">
+                    <h1 class="titulo-destaque">RotaUni</h1>
+                    <p class="subtitulo">Guia gratuito para estudantes de Campinas ingressarem no Ensino Superior</p>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="grade-cards">
+                    <button class="card-inicio" data-navegar="programas">
+                        <h3 class="texto-verde">Programas</h3>
+                        <p>Enem, SISU, ProUni e FIES</p>
+                    </button>
+
+                    <button class="card-inicio" data-navegar="calculadora">
+                        <h3 class="texto-azul">Calculadora</h3>
+                        <p>Enem e vestibulares</p>
+                    </button>
+
+                    <button class="card-inicio" data-navegar="sobre">
+                        <h3 class="texto-laranja">Sobre</h3>
+                        <p>Conheça o projeto</p>
+                    </button>
+
+                    <button class="card-inicio" data-navegar="cursinhos">
+                        <h3 class="texto-roxo">Cursinhos</h3>
+                        <p>Cursinhos gratuitos para Enem e Vestibular</p>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="pagina">
+            <div class="container container-conteudo">
+                <div class="largura-maxima">
+                    <h1>Sobre o RotaUni</h1>
+
+                    <div class="texto-corrido">
+                        <p>O ingresso no Ensino Superior pode ser desafiador, principalmente partindo de um lugar de vulnerabilidade social. Em muitos momentos, a falta de informação acessível e objetiva sobre os processos seletivos, programas de financiamento e cotas se transforma numa barreira adicional.</p>
+
+                        <p>O RotaUni tem como proposta auxiliar os alunos de Campinas. A plataforma reúne todas as informações essenciais sobre ingresso no ensino superior num único, com linguagem simples e direta, ferramentas práticas como a calculadora de média do Enem, e links confiáveis para consulta de notas de corte.</p>
+
+                        <div class="caixa-citacao">
+                            <p>Todo estudante deveria ter acesso às mesmas oportunidades. Informação é o primeiro passo para transformar sonhos em realidade.</p>
+                        </div>
+
+                        <div class="secao-info">
+                            <h2>O que oferecemos</h2>
+                            <ul>
+                                <li>Informações sobre Enem, SISU, ProUni e FIES</li>
+                                <li>Calculadora de média do Enem</li>
+                                <li>Links para consulta de notas de corte</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="programas" class="pagina">
+            <div class="container container-conteudo">
+                <div class="largura-maxima">
+                    <h1>Programas</h1>
+
+                    <div class="abas">
+                        <button class="btn-aba ativo" data-aba="enem">ENEM</button>
+                        <button class="btn-aba" data-aba="sisu">SISU</button>
+                        <button class="btn-aba" data-aba="prouni">ProUni</button>
+                        <button class="btn-aba" data-aba="fies">FIES</button>
+                    </div>
+
+                    <div class="conteudo-abas">
+                        <div id="enem" class="painel-aba ativo">
+                            <h2>ENEM - Exame Nacional do Ensino Médio</h2>
+                            <p>O Enem é o principal exame educacional do Brasil, aplicado anualmente pelo Ministério da Educação. Ele avalia o desempenho dos estudantes ao fim da educação básica e serve como critério de seleção para o ingresso em instituições de Ensino Superior.</p>
+
+                            <h3>Como funciona</h3>
+                            <ul>
+                                <li>Prova aplicada em dois domingos consecutivos, geralmente em novembro</li>
+                                <li>180 questões objetivas e uma redação</li>
+                                <li>Dividida em 4 áreas do conhecimento</li>
+                                <li>Nota varia de 0 a 1000 em cada área</li>
+                            </ul>
+
+                            <h3>Para que serve</h3>
+                            <ul>
+                                <li>Participar do SISU (universidades públicas)</li>
+                                <li>Concorrer a bolsas do ProUni</li>
+                                <li>Solicitar financiamento pelo FIES</li>
+                            </ul>
+
+                            <div class="secao-links">
+                                <h3>Links úteis</h3>
+                                <a href="https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem" target="_blank" class="card-link">
+                                    <span>Portal do INEP - Enem</span>
+                                    <span class="seta">→</span>
+                                </a>
+                                <a href="https://enem.inep.gov.br/participante/" target="_blank" class="card-link">
+                                    <span>Consultar Notas do Enem</span>
+                                    <span class="seta">→</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div id="sisu" class="painel-aba">
+                            <h2>SISU - Sistema de Seleção Unificada</h2>
+                            <p>O SISU é o sistema informatizado do MEC no qual instituições públicas de Ensino Superior oferecem vagas para candidatos participantes do Enem. O processo é totalmente gratuito e online.</p>
+
+                            <h3>Como funciona</h3>
+                            <ul>
+                                <li>Ocorre duas vezes por ano (janeiro e junho)</li>
+                                <li>Utiliza a nota do Enem mais recente</li>
+                                <li>Escolha até 2 cursos por edição</li>
+                                <li>Sistema mostra nota de corte em tempo real</li>
+                            </ul>
+
+                            <h3>Requisitos</h3>
+                            <ul>
+                                <li>Ter participado da edição mais recente do Enem</li>
+                                <li>Não ter zerado a redação</li>
+                                <li>Não ter participado como treineiro</li>
+                            </ul>
+
+                            <h3>Modalidades de concorrência</h3>
+                            <ul>
+                                <li>Ampla concorrência</li>
+                                <li>Cotas para escola pública</li>
+                                <li>Cotas raciais</li>
+                                <li>Cotas para pessoas com deficiência</li>
+                                <li>Cotas de baixa renda</li>
+                            </ul>
+
+                            <div class="secao-links">
+                                <h3>Links úteis</h3>
+                                <a href="https://sisu.mec.gov.br/" target="_blank" class="card-link">
+                                    <span>Portal do SISU</span>
+                                    <span class="seta">→</span>
+                                </a>
+                                <a href="https://sisualuno.mec.gov.br/" target="_blank" class="card-link">
+                                    <span>Notas de Corte</span>
+                                    <span class="seta">→</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div id="prouni" class="painel-aba">
+                            <h2>ProUni - Programa Universidade para Todos</h2>
+                            <p>O ProUni oferece bolsas de estudo integrais (100%) e parciais (50%) em instituições privadas de Ensino Superior, em cursos de graduação e sequenciais de formação específica.</p>
+
+                            <h3>Como funciona</h3>
+                            <ul>
+                                <li>Processo seletivo duas vezes por ano</li>
+                                <li>Seleção baseada na nota do Enem</li>
+                                <li>Escolha até 2 opções de curso</li>
+                                <li>Bolsas integrais: renda até 1,5 salário mínimo per capita</li>
+                                <li>Bolsas parciais: renda até 3 salários mínimos per capita</li>
+                            </ul>
+
+                            <h3>Requisitos</h3>
+                            <ul>
+                                <li>Ter participado do Enem mais recente</li>
+                                <li>Mínimo de 450 pontos na média das provas</li>
+                                <li>Não ter zerado a redação</li>
+                                <li>Ter cursado Ensino Médio em escola pública ou com bolsa integral</li>
+                            </ul>
+
+                            <div class="nota-pequena">
+                                <p>Bolsista integral pode receber Bolsa Permanência do MEC. É possível financiar os 50% restantes com o FIES (para bolsa parcial).</p>
+                            </div>
+
+                            <div class="secao-links">
+                                <h3>Links úteis</h3>
+                                <a href="https://prouniportal.mec.gov.br/" target="_blank" class="card-link">
+                                    <span>Portal do ProUni</span>
+                                    <span class="seta">→</span>
+                                </a>
+                                <a href="https://acessounico.mec.gov.br/busca" target="_blank" class="card-link">
+                                    <span>Notas de Corte - Acesso Único MEC</span>
+                                    <span class="seta">→</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div id="fies" class="painel-aba">
+                            <h2>FIES - Fundo de Financiamento Estudantil</h2>
+                            <p>O FIES é um programa do MEC que financia cursos de graduação em instituições privadas. O estudante paga o curso após a formatura, com juros baixos e prazo estendido.</p>
+
+                            <h3>Modalidades</h3>
+                            <ul>
+                                <li>FIES: juros zero para renda até 3 salários mínimos per capita</li>
+                                <li>P-FIES: financiamento em bancos privados para renda acima de 3 salários mínimos</li>
+                            </ul>
+
+                            <h3>Como funciona</h3>
+                            <ul>
+                                <li>Inscrições duas vezes ao ano</li>
+                                <li>Mínimo 450 pontos no Enem e não zerar redação</li>
+                                <li>Financia até 100% do curso</li>
+                                <li>Durante o curso: R$ 50 por trimestre</li>
+                                <li>Carência de 18 meses após formatura</li>
+                            </ul>
+
+                            <h3>Garantias necessárias</h3>
+                            <ul>
+                                <li>Fiador com renda comprovada</li>
+                                <li>Fiança solidária (grupo de 3 a 5 estudantes)</li>
+                                <li>Bens imóveis (alguns casos)</li>
+                            </ul>
+
+                            <div class="secao-links">
+                                <h3>Links úteis</h3>
+                                <a href="https://fiesselecao.mec.gov.br/" target="_blank" class="card-link">
+                                    <span>Portal do FIES</span>
+                                    <span class="seta">→</span>
+                                </a>
+                                <a href="https://acessounico.mec.gov.br/busca" target="_blank" class="card-link">
+                                    <span>Notas de Corte - Acesso Único MEC</span>
+                                    <span class="seta">→</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="calculadora" class="pagina">
+            <div class="fundo-calculadora">
+                <div class="container container-conteudo">
+                    <div class="largura-maxima">
+                        <h1 class="titulo-verde">Calculadora</h1>
+
+                        <div class="botoes-tipo-calculo">
+                            <button class="btn-tipo ativo" data-tipo="simples">Média Simples</button>
+                            <button class="btn-tipo" data-tipo="ponderada">Média Ponderada</button>
+                        </div>
+
+                        <p class="descricao-calc" id="descricaoCalc">
+                            Digite suas notas do Enem (0 a 1000) para calcular a média simples.
+                        </p>
+
+                        <div class="info-pesos escondido" id="infoPesos">
+                            <h3>O que são pesos?</h3>
+                            <p>Cada curso pode dar mais importância para algumas áreas. Por exemplo, Engenharia pode dar peso 2 para Matemática e peso 1 para as outras áreas.</p>
+                            <p><strong>Como usar:</strong><br>Se o peso for 1, pode deixar o campo vazio. Preencha apenas os pesos diferentes de 1.</p>
+                            <p><strong>Como achar os pesos:</strong> Consulte edital da universidade ou do SISU.</p>
+                        </div>
+
+                        <form class="form-calculadora" id="formCalculadora">
+                            <div class="campo-calc">
+                                <label for="linguagens">Linguagens</label>
+                                <div class="linha-input">
+                                    <input type="number" id="linguagens" placeholder="0 - 1000" min="0" max="1000">
+                                    <input type="number" class="input-peso escondido" id="peso-linguagens" placeholder="1">
+                                </div>
+                            </div>
+
+                            <div class="campo-calc">
+                                <label for="matematica">Matemática</label>
+                                <div class="linha-input">
+                                    <input type="number" id="matematica" placeholder="0 - 1000" min="0" max="1000">
+                                    <input type="number" class="input-peso escondido" id="peso-matematica" placeholder="1">
+                                </div>
+                            </div>
+
+                            <div class="campo-calc">
+                                <label for="humanas">Ciências Humanas</label>
+                                <div class="linha-input">
+                                    <input type="number" id="humanas" placeholder="0 - 1000" min="0" max="1000">
+                                    <input type="number" class="input-peso escondido" id="peso-humanas" placeholder="1">
+                                </div>
+                            </div>
+
+                            <div class="campo-calc">
+                                <label for="natureza">Ciências da Natureza</label>
+                                <div class="linha-input">
+                                    <input type="number" id="natureza" placeholder="0 - 1000" min="0" max="1000">
+                                    <input type="number" class="input-peso escondido" id="peso-natureza" placeholder="1">
+                                </div>
+                            </div>
+
+                            <div class="campo-calc">
+                                <label for="redacao">Redação</label>
+                                <div class="linha-input">
+                                    <input type="number" id="redacao" placeholder="0 - 1000" min="0" max="1000">
+                                    <input type="number" class="input-peso escondido" id="peso-redacao" placeholder="1">
+                                </div>
+                            </div>
+
+                            <div class="botoes-acao">
+                                <button type="submit" class="btn-calcular">Calcular</button>
+                                <button type="button" class="btn-limpar" id="btnLimpar">Limpar</button>
+                            </div>
+                        </form>
+
+                        <div class="resultado-calc escondido" id="resultadoCalc">
+                            <p class="rotulo-resultado" id="rotuloResultado">Sua média simples é:</p>
+                            <div class="valor-resultado" id="valorResultado">0.00</div>
+                            <p class="info-resultado" id="infoResultado"></p>
+                        </div>
+
+                        <div class="rodape-calc">
+                            <p id="textoRodapeCalc">
+                                <strong>Atenção:</strong> alguns cursos usam pesos diferentes para cada área. Utilize a calculadora ponderada para calcular com os pesos específicos do seu curso.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cursinhos" class="pagina">
+            <div class="fundo-cursinhos">
+                <div class="container container-conteudo">
+                    <div class="largura-maxima">
+                        <h1 class="titulo-roxo">Cursinhos Populares</h1>
+
+                        <div class="texto-corrido">
+                            <p>Cursinhos populares são projetos educacionais que oferecem preparação gratuita ou de baixo custo para o Enem e vestibulares, especialmente voltados para estudantes de baixa renda. São conduzidos por voluntários e organizações sociais, promovendo acesso democrático ao Ensino Superior.</p>
+
+                            <div class="secao-info">
+                                <h2>Cursinhos em Campinas</h2>
+                                <div class="lista-cursinhos">
+                                    <div class="item-cursinho">
+                                        <a href="https://www.facebook.com/CursinhoPopularDandara/?fref=ts" target="_blank" class="link-cursinho">Cursinho Popular Dandara dos Palmares</a>
+                                        <p class="local-cursinho">Centro e Jd. São Marcos</p>
+                                    </div>
+
+                                    <div class="item-cursinho">
+                                        <a href="https://facebook.com/libertesecampinas/" target="_blank" class="link-cursinho">Cursinho Popular Liberte-se</a>
+                                        <p class="local-cursinho">Centro e Real Parque</p>
+                                    </div>
+
+                                    <div class="item-cursinho">
+                                        <a href="https://www.facebook.com/cursinhodanoro/" target="_blank" class="link-cursinho">Cursinho Popular Amelinha Teles</a>
+                                        <p class="local-cursinho">E.E. Carlos Alberto Galhiego, próximo ao terminal Campo Grande</p>
+                                    </div>
+
+                                    <div class="item-cursinho">
+                                        <a href="http://cursinhoidentidadepopular.blogspot.com.br/" target="_blank" class="link-cursinho">Cursinho Identidade Popular</a>
+                                        <p class="local-cursinho">Jd. Amazonas, próximo a Band e EPTV</p>
+                                    </div>
+
+                                    <div class="item-cursinho">
+                                        <a href="https://www.facebook.com/CursinhoPopularQuilomboUrbanoOMG/" target="_blank" class="link-cursinho">Cursinho Popular Quilombo Urbano OMG</a>
+                                        <p class="local-cursinho">Pq. Oziel</p>
+                                    </div>
+
+                                    <div class="item-cursinho">
+                                        <a href="https://www.facebook.com/cursinhoresponsa" target="_blank" class="link-cursinho">Cursinho Popular Responsa</a>
+                                        <p class="local-cursinho">Pq. Oziel</p>
+                                    </div>
+
+                                    <div class="item-cursinho">
+                                        <a href="https://cursinhoherbertdesouza.online/" target="_blank" class="link-cursinho">Cursinho Alternativo Hebert de Souza</a>
+                                        <p class="local-cursinho">Pq. Vila União</p>
+                                    </div>
+
+                                    <div class="item-cursinho">
+                                        <a href="https://www.facebook.com/p/Cursinho-Popular-TRIU-100039928811931/?locale=pt_BR" target="_blank" class="link-cursinho">Curso Popular TRIU</a>
+                                        <p class="local-cursinho">Barão Geraldo</p>
+                                    </div>
+
+                                    <div class="item-cursinho">
+                                        <a href="https://www.instagram.com/proceu_conhecimento/" target="_blank" class="link-cursinho">Proceu Conhecimento</a>
+                                        <p class="local-cursinho">Barão Geraldo - Moradia/Unicamp</p>
+                                    </div>
+
+                                    <div class="item-cursinho">
+                                        <a href="http://projetoprometheuscampinas.blogspot.com.br/" target="_blank" class="link-cursinho">Projeto Prometheus</a>
+                                        <p class="local-cursinho">Campinas</p>
+                                    </div>
+
+                                    <div class="item-cursinho">
+                                        <a href="https://www.facebook.com/emancipacampinas/" target="_blank" class="link-cursinho">Cursinho Popular Antônio da Costa Santos - Rede Emancipa</a>
+                                        <p class="local-cursinho">Dentro da Unicamp</p>
+                                    </div>
+                                </div>
+                                <p class="nota-rodape-cursinhos">* Entre em contato diretamente com os cursinhos para informações sobre inscrições e cronogramas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="container conteudo-rodape">
+            <p class="frase-rodape">Orientando caminhos para o Ensino Superior</p>
+            <div class="info-rodape">
+                <span>RotaUni · Campinas, SP</span>
+                <span class="separador">·</span>
+                <span>© <span id="anoAtual"></span></span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
